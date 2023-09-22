@@ -1,0 +1,45 @@
+#Descripcion propiedades de Illustris TNG300-1 z=0
+
+['SubhaloCM']:(X,Y,Z) Comoving center of mass of the Subhalo, computed as the sum of the mass weighted relative coordinates of all particles/cells in the Subhalo, of all types.(ckpc/h)
+4* ['SubhaloHalfmassRad']:Comoving radius containing half of the total mass (SubhaloMass) of this Subhalo.(ckpc/h)
+5* ['SubhaloMass']:Total mass of all member particle/cells which are bound to this Subhalo, of all types. Particle/cells bound to subhaloes of this Subhalo are NOT accounted for.(10^10 M⊙ /h)
+6* ['SubhaloStellarPhotometricsMassInRad']:Sum of the mass of the member stellar particles, but restricted to stars within the radius SubhaloStellarPhotometricsRad.(10^10 M⊙ /h)
+7* ['SubhaloStellarPhotometricsRad']:Radius at which the surface brightness profile (computed from all member stellar particles) drops below the limit of 20.7 mag arcsec^−2 in the K band (in comoving units). (ckpc/h)
+8* ['SubhaloParent']:Index back into this same Subhalo table of the unique Subfind host/parent of this Subhalo. This index is local to the group (i.e. 2 indicates the third most massive subhalo of the parent halo of this subhalo, not the third most massive of the whole snapshot). The values are often zero for all subhalos of a group, indicating that there is no resolved hierarchical structure in that group, beyond the primary subhalo having as direct children all of the secondary subhalos.
+9* ['SubhaloGrNr']:Index into the Group table of the FOF host/parent of this Subhalo.
+10* ['SubhaloPos']: X- Spatial position within the periodic box (of the particle with the minium gravitational potential energy). Comoving coordinate. (ckpc/h)
+11* ['SubhaloPos']: Y- Spatial position within the periodic box (of the particle with the minium gravitational potential energy). Comoving coordinate. (ckpc/h)
+12* ['SubhaloPos']: Z- Spatial position within the periodic box (of the particle with the minium gravitational potential energy). Comoving coordinate. (ckpc/h)
+13* ['SubhaloSFR']: Sum of the individual star formation rates of all gas cells in this subhalo. (M⊙ /yr)
+14* ['SubhaloVelDisp']: One-dimensional velocity dispersion of all the member particles/cells (the 3D dispersion divided by 3–√3). (km/s)
+15* ['SubhaloVel']: X-Peculiar velocity of the group, computed as the sum of the mass weighted velocities of all particles/cells in this group, of all types. No unit conversion is needed. (km/s)
+16* ['SubhaloVel'] Y-Peculiar velocity of the group, computed as the sum of the mass weighted velocities of all particles/cells in this group, of all types. No unit conversion is needed. (km/s)
+17* ['SubhaloVel'] Z-Peculiar velocity of the group, computed as the sum of the mass weighted velocities of all particles/cells in this group, of all types. No unit conversion is needed. (km/s)
+18*['SubhaloStellarPhotometrics'][0]: band: U. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+19* ['SubhaloStellarPhotometrics'][1] band: B. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+20* ['SubhaloStellarPhotometrics'][2] band: V. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+21*['SubhaloStellarPhotometrics'][3] band: K. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+22* ['SubhaloStellarPhotometrics'][4] band: g. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+23* ['SubhaloStellarPhotometrics'][5] band: r. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+24* ['SubhaloStellarPhotometrics'][6] band: i. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+25* ['SubhaloStellarPhotometrics'][7] band: z. Magnitudes based on the summed-up luminosities of all the stellar particles of the group. For details on the bands, see snapshot table for stars.
+26* halos['GroupFirstSub']: Index into the Subhalo table of the first/primary/most massive Subfind group within this FoF group. Note: This value is signed (or should be interpreted as signed)! In this case, a value of -1 indicates that this FoF group has no subhalos.
+27* halos['GroupNsubs']: Count of the total number of Subfind groups within this FoF group.
+28* halos['Group_M_Crit200']: Total Mass of this group enclosed in a sphere whose mean density is 200 times the critical density of the Universe, at the time the halo is considered. (10^10 M⊙ /h)
+29* halos['Group_M_Mean200']: Total Mass of this group enclosed in a sphere whose mean density is 200 times the mean density of the Universe, at the time the halo is considered. (10^10 M⊙ /h)
+30* halos['Group_R_Crit200']: Comoving Radius of a sphere centered at the GroupPos of this Group whose mean density is 200 times the critical density of the Universe, at the time the halo is considered. (ckpc/h)
+31* halos['Group_R_Mean200']: Comoving Radius of a sphere centered at the GroupPos of this Group whose mean density is 200 times the mean density of the Universe, at the time the halo is considered. (ckpc/h)
+32* halos['GroupCM']: X-Center of mass of the group, computed as the sum of the mass weighted relative coordinates of all particles/cells in the group, of all types. Comoving coordinate. (Available only for the Illustris-3 run) (ckpc/h)
+33* halos['GroupCM']: Y-Center of mass of the group, computed as the sum of the mass weighted relative coordinates of all particles/cells in the group, of all types. Comoving coordinate. (Available only for the Illustris-3 run) (ckpc/h)
+34* halos['GroupCM']: Z-Center of mass of the group, computed as the sum of the mass weighted relative coordinates of all particles/cells in the group, of all types. Comoving coordinate. (Available only for the Illustris-3 run) (ckpc/h)
+35* halos['GroupPos']: X-Spatial position within the periodic box (of the particle with the minimum gravitational potential energy). Comoving coordinate. (ckpc/h)
+36* halos['GroupPos']: Y-Spatial position within the periodic box (of the particle with the minimum gravitational potential energy). Comoving coordinate. (ckpc/h)
+37* halos['GroupPos']: Z-Spatial position within the periodic box (of the particle with the minimum gravitational potential energy). Comoving coordinate. (ckpc/h)
+38* halos['GroupVel']: X-Velocity of the group, computed as the sum of the mass weighted velocities of all particles/cells in this group, of all types. The peculiar velocity is obtained by multiplying this value by 1/a. (km/s/a)
+39* halos['GroupVel']: Y-Velocity of the group, computed as the sum of the mass weighted velocities of all particles/cells in this group, of all types. The peculiar velocity is obtained by multiplying this value by 1/a. (km/s/a)
+40* halos['GroupVel']: Z-Velocity of the group, computed as the sum of the mass weighted velocities of all particles/cells in this group, of all types. The peculiar velocity is obtained by multiplying this value by 1/a. (km/s/a)
+
+
+
+
+
